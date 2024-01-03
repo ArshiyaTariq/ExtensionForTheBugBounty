@@ -1,0 +1,14 @@
+manifest.json:
+{
+ "manifest_version": 2,
+ "name": "Bug Bounty Extension",
+ "version": "1.0",
+ "description": "Extension to help with bug bounty hunting.",
+ "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+ ],
+ "permissions": ["activeTab"]
+}
